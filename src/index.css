@@ -2,61 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
-@keyframes fade-up {
-  from {
-    opacity: 0;
-    transform: translateY(24px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-@layer utilities {
-  .animate-fade-up,
-  .animate-fade-up-delay-1,
-  .animate-fade-up-delay-2,
-  .animate-fade-up-delay-3 {
-    opacity: 0;
-    animation-name: fade-up;
-    animation-duration: 720ms;
-    animation-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
-    animation-fill-mode: forwards;
-  }
-
-  .animate-fade-up-delay-1 {
-    animation-delay: 120ms;
-  }
-
-  .animate-fade-up-delay-2 {
-    animation-delay: 240ms;
-  }
-
-  .animate-fade-up-delay-3 {
-    animation-delay: 360ms;
-  }
-}
-
-html {
-  scroll-behavior: smooth;
+html,
+body {
+  overflow-x: hidden;
 }
 
 body {
-  margin: 0;
-  min-width: 320px;
-  font-family:
-    Gilroy,
-    -apple-system,
-    BlinkMacSystemFont,
-    "Segoe UI",
-    Roboto,
-    "Helvetica Neue",
-    Arial,
-    "Noto Sans",
-    sans-serif;
-  color: #0f172a;
-  background: #f3fbff;
+  background: #010101;
+  color: white;
+  font-family: 'Inter', sans-serif;
 }
 
 button,
