@@ -188,7 +188,7 @@
       .nav a { position: relative; transition: color .2s; }
       .nav a::after { content: ''; position: absolute; bottom: -4px; left: 0; width: 0; height: 2px; background: #8cc7de; border-radius: 2px; transition: width .3s; }
       .nav a:hover::after { width: 100%; }
-      .phone { display: flex; align-items: center; gap: 18px; font-size: 14px; font-weight: 600; grid-column: 3; justify-self: end; }
+      .phone { display: flex; align-items: center; gap: 18px; font-size: 14px; font-weight: 600; grid-column: 3; justify-self: end; white-space: nowrap; flex-wrap: nowrap; }
       .btn { display: inline-flex; align-items: center; gap: 10px; border-radius: 999px; background: #2d2d2d; color: white; padding: 15px 24px; font-size: 13px; font-weight: 700; letter-spacing: .18em; text-transform: uppercase; transition: background .2s, transform .2s; }
       .btn:hover { background: #444; transform: translateY(-2px); }
       .outline { display: inline-flex; align-items: center; gap: 8px; border: 1px solid #2d2d2d; border-radius: 999px; padding: 15px 24px; font-size: 13px; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; transition: background .2s, color .2s; }
@@ -423,7 +423,7 @@
       <div class="top-inner">
         <a class="address" href="#top">Γυθείου 22, Χαλάνδρι</a>
         <a class="brand" href="#top" aria-label="Dr. Chrysa"><img src="public/tooth-heart.svg" alt="" /></a>
-        <div class="phone"><span>210 711 7021</span><span class="live-status" id="liveStatus"><span class="live-dot"></span><span id="liveText"></span></span><button class="theme-switch" id="themeToggle" onclick="toggleDarkMode()" aria-label="Dark mode"><div class="knob"><div class="craters"><span></span><span></span><span></span></div></div><div class="clouds"></div><div class="stars"><span></span><span></span><span></span><span></span></div></button><a class="btn" href="#appointment">Κλείσε ραντεβού</a></div>
+        <div class="phone"><a class="btn" href="#appointment">Κλείσε ραντεβού</a><span>210 711 7021</span><span class="live-status" id="liveStatus"><span class="live-dot"></span><span id="liveText"></span></span><button class="theme-switch" id="themeToggle" onclick="toggleDarkMode()" aria-label="Dark mode"><div class="knob"><div class="craters"><span></span><span></span><span></span></div></div><div class="clouds"></div><div class="stars"><span></span><span></span><span></span><span></span></div></button></div>
         <button class="hamburger" id="hamburgerBtn" onclick="toggleMobileMenu()" aria-label="Μενού">
           <span></span><span></span><span></span>
         </button>
