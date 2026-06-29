@@ -183,7 +183,7 @@
       .address { font-size: 12px; font-weight: 700; letter-spacing: .22em; text-transform: uppercase; grid-column: 1; justify-self: start; }
       .brand { display: flex; align-items: center; justify-self: center; grid-column: 2; }
       .brand img { width: 33px; height: 35px; border-radius: 999px; object-fit: cover; }
-      .nav { width: fit-content; margin: 8px auto 0; display: flex; gap: 32px; padding: 12px 30px; border-radius: 999px; background: rgba(255,255,255,.75); box-shadow: 0 8px 25px var(--shadow); font-size: 14px; }
+      .nav { display: none; width: fit-content; margin: 8px auto 0; flex-direction: row; gap: 32px; padding: 12px 30px; border-radius: 999px; background: rgba(255,255,255,.75); box-shadow: 0 8px 25px var(--shadow); font-size: 14px; }
       [data-theme="dark"] .nav { background: rgba(26,32,40,.8); }
       .nav a { position: relative; transition: color .2s; }
       .nav a::after { content: ''; position: absolute; bottom: -4px; left: 0; width: 0; height: 2px; background: #8cc7de; border-radius: 2px; transition: width .3s; }
@@ -195,7 +195,7 @@
       .outline:hover { background: #2d2d2d; color: white; }
 
       /* === HAMBURGER MENU === */
-      .hamburger { display: none; border: 0; background: none; cursor: pointer; padding: 8px; grid-column: 3; justify-self: end; z-index: 25; }
+      .hamburger { display: block; border: 0; background: none; cursor: pointer; padding: 8px; grid-column: 3; justify-self: end; z-index: 25; }
       .hamburger span { display: block; width: 24px; height: 2px; background: var(--text); margin: 5px 0; border-radius: 2px; transition: transform .3s, opacity .3s, background .3s; }
       .hamburger.active span:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); }
       .hamburger.active span:nth-child(2) { opacity: 0; }
@@ -286,6 +286,7 @@
         .top-inner { grid-template-columns: 1fr auto 1fr; }
         .nav, .phone, .address { display: none; }
         .hamburger { display: block; }
+        .nav { display: none; }
         .mobile-call { display: flex; position: fixed; bottom: 0; left: 0; right: 0; z-index: 18; background: #2d2d2d; padding: 14px 22px; justify-content: center; align-items: center; gap: 10px; color: white; font-size: 15px; font-weight: 600; text-decoration: none; }
         .mobile-call svg { width: 20px; height: 20px; fill: white; }
         .hero, .section, .photo-proof { padding-left: 16px; padding-right: 16px; }
